@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TH02 - Vũ Thị Kim Ngân - 21093931</title>
+    <link rel="stylesheet" type="text/css" href="/type.css">
+    <scrip src="main.js"></scrip>
+</head>
+<body>
+<!-- BÀI 1 -->
+    <div class="Bai1">
+        <h1 class="H1"> Bài 1 </h1>
+        <b> GIẢI PHƯƠNG TRÌNH BẬC I </b> <br>
+        <b> ax + b = 0</b> <br>
+        <input class="ip1" type="text" name="Hệ số a" value ="Hệ số a"> </input> <br>
+        <input class="ip2" type="text" name="Hệ số b" value ="Hệ số b"> </input> <br>
+        <button class="btt1">Giải Phương Trình</button> <br>
+        <b> KẾT QUẢ </b>
+        <p class="result"> Nghiệm x =  </p>
+    </div>
+
+<!-- BÀI 2 -->
+    <div class="Bai2">
+        <h1 class="H1"> Bài 2 </h1>
+        <h2 id="form"> ĐÓNG GÓP Ý KIẾN VỀ SẢN PHẨM </h2>
+
+    <form id="contributionForm">
+      <label for="fullName">Họ và Tên:</label>
+      <input type="text" id="fullName" name="fullName" required /><br />
+
+      <label for="phoneNumber">Số Điện Thoại:</label>
+      <input
+        type="tel"
+        id="phoneNumber"
+        name="phoneNumber"
+        required
+        pattern="[0-9]{10,11}"
+      /><br />
+
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" required /><br />
+
+      <label for="feedback">Ý Kiến Đóng Góp:</label><br />
+      <textarea
+        id="feedback"
+        name="feedback"
+        rows="4"
+        cols="50"
+        required
+      ></textarea
+      ><br />
+      <button type="submit">Gửi Ý Kiến</button>
+    </form>
+
+        <P class="formcontent"> Góp ý của bạn sẽ được chúng tôi xem xét, vui lòng nhập tiếng Việt có dấu </P>
+        <P class="formcontent"> <span>Các ý kiến đóng góp nên viết chi tiết rõ ràng, kèm theo các minh chứng xác thực thời gian và địa điểm</span> <span id="Italic"> (Nếu có). </span> </P>
+    </div>
+
+<!-- BÀI 4 -->
+<div class="Bai4">
+<h1 class="H1"> Bài 4 </h1>
+<h2>Tính chỉ số BMI</h2>
+
+<form id="bmiForm">
+  <label for="weight">Cân nặng (kg):</label>
+  <input type="number" id="weight" name="weight" required><br>
+
+  <label for="height">Chiều cao (m):</label>
+  <input type="number" id="height" name="height" step="0.01" required><br>
+
+  <button type="submit">Tính BMI</button>
+</form>
+
+<div id="bmiResult"></div>
+</div>
+</body>
+</html>
